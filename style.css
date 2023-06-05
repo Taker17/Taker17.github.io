@@ -192,7 +192,7 @@ section {
  height: 768px;
  overflow: hidden;
  pointer-events: none;
-}
+} 
 
 .home .profession-container .profession-box {
  position: absolute;
@@ -235,7 +235,7 @@ section {
  color: var(--main-color);
  transform: rotate(calc(360deg / 3 * var(--i)));
  transform-origin: 384px;
- background: var(--bg-color);
+
  padding: 13px 0;
 }
 
@@ -625,6 +625,56 @@ span {
 }
 
 /* Breakpoints  */
+@media (max-width: 1800px) {
+  html {
+    font-size: 55%;
+  }
+
+  .home .profession-container {
+    height: 85.8rem;
+  }
+
+  .home .profession-container .profession-box {
+    right: -40rem;
+    height: 85.8rem;
+  }
+
+  .home .profession-container .overlay {
+    right: -25rem;
+  }
+
+        .show-layer h4 {
+          font-size: 2.5rem;
+          -webkit-text-stroke-width: 1.5px;
+        }
+}
+
+@media (max-width: 1500px) {
+  html {
+    font-size: 55%;
+  }
+
+  .home .profession-container {
+    height: 85.8rem;
+  }
+
+  .home .profession-container .profession-box {
+    right: -35rem;
+    height: 85.8rem;
+  }
+
+  .home .profession-container .overlay {
+    right: -30rem;
+  }
+
+  .show-layer h4 {
+    font-size: 2rem;
+    -webkit-text-stroke-width: 1.5px;
+  }
+
+  
+}
+
 @media (max-width: 1200px) {
  html {
   font-size: 55%;
@@ -635,16 +685,22 @@ span {
  }
 
  .home .profession-container .profession-box {
-  right: -12rem;
+  right: -45rem;
   height: 85.8rem;
  }
 
  .home .profession-container .overlay {
-  right: -9rem;
+  right: -30rem;
  }
+
+  .show-layer h4 {
+    font-size: 1.75rem;
+    -webkit-text-stroke-width: 1.5px;
+}
 }
 
 @media (max-width: 1024px) {
+
  .header {
   padding: 2rem 3%;
  }
@@ -654,11 +710,11 @@ span {
  }
 
  .home .profession-container .profession-box {
-  right: -22rem;
+  right: -45rem;
  }
 
  .home .profession-container .overlay {
-  right: -15rem;
+  right: -35rem;
  }
 }
 
@@ -811,6 +867,7 @@ span {
    border-width: 23.9rem;
   }
 
+
   .about {
    flex-direction: column-reverse;
    text-align: center;
@@ -858,6 +915,8 @@ span {
   .show .show-container {
    grid-template-columns: 1fr;
   }
+
+  
 }
 
 @media (max-width: 450px) {
@@ -890,6 +949,19 @@ span {
 
 }
 
+@media (max-width: 280px) {
+  html {
+    font-size: 50%;
+  }
+
+  #darkMode-icon {
+    right: 6rem;
+  }
+
+  .home {
+    padding: 0 3% 30rem;
+  }
+}
 
 
 
